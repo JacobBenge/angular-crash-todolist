@@ -1,0 +1,12 @@
+<!-- templates must be wrapped within one root tag -->
+<!-- ngClass directive is set to a method to determine when to apply a class -->
+<div [ngClass]="setClasses()">
+    <p>
+        <!-- event of type change (change) triggers the method. Pass in the todo-->
+        <input (change)="onToggle(todo)" type="checkbox"/>
+        {{ todo.title }}
+        <button (click)="onDelete(todo)" class="del">x</button>
+    </p>
+</div>
+
+

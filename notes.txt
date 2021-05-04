@@ -1,0 +1,22 @@
+// Setup commands
+ npm install -g @angular/cli
+ ng --version
+ ng new angular-crash-todolist
+ cd .\angular-crash-todolist\ 
+ code .    
+ ng serve --open 
+
+ // Import styles and scripts like bootstrap and font awesome by using angular.json folder. This is for globals
+
+ // Generate a component
+ ng generate component components/Todos
+ ng g c components/layout/Header
+ ng g c components/AddTodo
+ ng g c components/pages/About
+ // Generate a service (rest api)
+ ng g s services/Todo
+
+ // Ready to deploy? upload the dist folder
+ ng build
+ 
+

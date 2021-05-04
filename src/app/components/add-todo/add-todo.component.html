@@ -1,0 +1,6 @@
+<!-- prevent default function of a submit button with ngSubmit -->
+<form class="form" (ngSubmit)="onSubmit()">
+    <!-- ngModel is a directive that is two way data binding. Name needs to match -->
+    <input type="text" name="title" [(ngModel)]="title" placeholder="Add Todo...">
+    <input type="submit" value="Submit" class="btn">
+</form>
